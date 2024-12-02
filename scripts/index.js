@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded",() => {
     // Container labels
+    const form = document.getElementById("cont-form")
     const searchForm = document.getElementById("box-form-search")
     const deleteForm = document.getElementById("box-form-delete")
     const resultCard = document.getElementById("div-search")
@@ -24,6 +25,7 @@ document.addEventListener("DOMContentLoaded",() => {
     btnDelete.addEventListener("click",showDeleteForm)
     btnSendSearch.addEventListener("click",searchPet)
     btnSendDelete.addEventListener("click",deletePet)
+    form.addEventListener("submit",showSearchForm)
 
     // functions
     function capitalizeFirstLetter(str) {
@@ -66,9 +68,9 @@ document.addEventListener("DOMContentLoaded",() => {
             <img src="${imgs[ramIndex]}" alt="imgDog" title="imgDog">
             <p><strong>Nombre:</strong> ${pet.nombre}</p>
             <p><strong>Especie:</strong> ${pet.especie}</p>
-            <p><strong>Raza:</strong> $${pet.raza}</p>
-            <p><strong>Edad:</strong> ${pet.edad}</p>
-            <p><strong>Peso:</strong> ${pet.peso}</p>
+            <p><strong>Raza:</strong> ${pet.raza}</p>
+            <p><strong>Edad:</strong> ${pet.edad} años</p>
+            <p><strong>Peso:</strong> ${pet.peso}kg</p>
             <p><strong>Nombre Propietario:</strong> ${pet.nombre_propietario}</p>
             <p><strong>Sexo:</strong> ${pet.sexo}</p>
         `
