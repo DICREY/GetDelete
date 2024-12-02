@@ -1,0 +1,102 @@
+[
+    {
+        "id": "MASC001",
+        "nombre": "Luna",
+        "especie": "Perro",
+        "raza": "Labrador Retriever",
+        "edad": 3.5,
+        "peso": 25.3000000000,
+        "nombre_propietario": "Carlos",
+        "sexo": "F"
+    },
+    {
+        "id": "MASC002",
+        "nombre": "Max",
+        "especie": "Perro",
+        "raza": "Bulldog Francés",
+        "edad": 2.0,
+        "peso": 12.5000000000,
+        "nombre_propietario": "Laura",
+        "sexo": "M"
+    },
+    {
+        "id": "MASC003",
+        "nombre": "Simba",
+        "especie": "Gato",
+        "raza": "Siames",
+        "edad": 4.2,
+        "peso": 6.2000000000,
+        "nombre_propietario": "Andrés",
+        "sexo": "M"
+    },
+    {
+        "id": "MASC004",
+        "nombre": "Bella",
+        "especie": "Perro",
+        "raza": "Golden Retriever",
+        "edad": 5.1,
+        "peso": 30.0000000000,
+        "nombre_propietario": "María",
+        "sexo": "F"
+    },
+    {
+        "id": "MASC005",
+        "nombre": "Coco",
+        "especie": "Ave",
+        "raza": "Cacatúa",
+        "edad": 2.8,
+        "peso": 1.2000000000,
+        "nombre_propietario": "Luis",
+        "sexo": "M"
+    },
+    {
+        "id": "MASC006",
+        "nombre": "Nala",
+        "especie": "Gato",
+        "raza": "Maine Coon",
+        "edad": 3.7,
+        "peso": 8.5000000000,
+        "nombre_propietario": "Sofía",
+        "sexo": "F"
+    },
+    {
+        "id": "MASC007",
+        "nombre": "Rocky",
+        "especie": "Perro",
+        "raza": "Pastor Alemán",
+        "edad": 6.0,
+        "peso": 35.4000000000,
+        "nombre_propietario": "Juan",
+        "sexo": "M"
+    },
+    {
+        "id": "MASC008",
+        "nombre": "Mia",
+        "especie": "Gato",
+        "raza": "Persa",
+        "edad": 1.9,
+        "peso": 4.3000000000,
+        "nombre_propietario": "Ana",
+        "sexo": "F"
+    },
+    {
+        "id": "MASC009",
+        "nombre": "Lola",
+        "especie": "Conejo",
+        "raza": "Holandés",
+        "edad": 2.3,
+        "peso": 2.1000000000,
+        "nombre_propietario": "Pedro",
+        "sexo": "F"
+    },
+    {
+        "id": "MASC010",
+        "nombre": "Bruno",
+        "especie": "Perro",
+        "raza": "Beagle",
+        "edad": 4.0,
+        "peso": 14.8000000000,
+        "nombre_propietario": "Marta",
+        "sexo": "M"
+    }
+]
