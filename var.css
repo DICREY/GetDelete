@@ -1,0 +1,30 @@
+:root {
+    --black: #ffffff;
+    --white: #ffffff;
+    --bg-form: rgb(201, 203, 204);
+    --font: #02454a;
+    --font-p: #2d2d2d;
+    --bg-input: #ece7e781;
+    --font-size: 1rem;
+    --font-size-title: 1.8rem;
+}
+/* font size root  */
+html {
+    font-size: 16px;
+}
+/* Media querys */
+@media (400px < width) {
+    html {
+        font-size: 18px;
+    }
+}
+@media (1600px < width) {
+    html {
+        font-size: 24px;
+    }
+}
+@media (2800px < width) {
+    html {
+        font-size: 34px;
+    }
+}
