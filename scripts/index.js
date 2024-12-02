@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded",() => {
     btnDelete.addEventListener("click",showDeleteForm)
     btnSendSearch.addEventListener("click",searchPet)
     btnSendDelete.addEventListener("click",deletePet)
-    form.addEventListener("submit",showSearchForm)
 
     // functions
     function capitalizeFirstLetter(str) {

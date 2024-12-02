@@ -14,7 +14,7 @@ body {
     background: url("../imgs/pattern_bg.jpg");
     background-size: cover;
 }
-form{
+section,form{
     width: 40rem;
     background: var(--bg-form);
     padding: 20px;
