@@ -56,10 +56,10 @@ document.addEventListener("DOMContentLoaded",() => {
     }
 
     function searchPet() {
-        const inputName = capitalizeFirstLetter(searchInput.value)
-        let pets = info
+        // Vars
         let ramIndex = Math.floor(Math.random() * imgs.length)
-
+        const inputName = capitalizeFirstLetter(searchInput.value)
+        const pets = info
         const pet = pets.find(pet => pet.nombre === inputName)
     
         if(pet) {
@@ -74,22 +74,20 @@ document.addEventListener("DOMContentLoaded",() => {
             <p><strong>Nombre Propietario:</strong> ${pet.nombre_propietario}</p>
             <p><strong>Sexo:</strong> ${pet.sexo}</p>
         `
-        } else resultCard.innerHTML = '<p style="color: red;">Mascota no encontrada</p>'
+        } else resultCard.innerHTML = '<p style="color: red;font-weight:bold;">404 Mascota no encontrada</p>'
     }
     
     function deletePet() {
-        // Vars 
-        const deleteInputName = capitalizeFirstLetter(deleteInput.value)
         try {
+            // Vars
+            const deleteInputName = capitalizeFirstLetter(deleteInput.value)
             const index = info.findIndex(pet => pet.nombre === deleteInputName)
 
             if(index !== -1) {
                 const deletedPet = info.splice(index, 1)
 
                 resultCardDelete.innerHTML = `<p>La mascota ${deleteInputName} ha sido borrada exitosamente.</p>`
-            } else {
-                resultCardDelete.innerHTML = '<p style="color: red;">Mascota no encontrada</p>'
-            }
+            } else resultCardDelete.innerHTML = '<p style="color: red;font-weight:bold;">404 Mascota no encontrada</p>'
         } catch(err) {
             resultCardDelete.innerHTML = `<p style='color: red;'>${err}</p>`
         }
