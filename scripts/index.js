@@ -26,6 +26,11 @@ document.addEventListener("DOMContentLoaded",() => {
     btnSendDelete.addEventListener("click",deletePet)
 
     // functions
+    function capitalizeFirstLetter(str) {
+        if (!str) return ''
+        return str.charAt(0).toUpperCase() + str.slice(1)
+    }
+
     function showSearchForm() {
         searchForm.classList.remove("inactive")
         deleteForm.classList.add("inactive")
@@ -49,7 +54,7 @@ document.addEventListener("DOMContentLoaded",() => {
     }
 
     function searchPet() {
-        const inputName = searchInput.value
+        const inputName = capitalizeFirstLetter(searchInput.value)
         let pets = info
         let ramIndex = Math.floor(Math.random() * imgs.length)
 
@@ -72,14 +77,14 @@ document.addEventListener("DOMContentLoaded",() => {
     
     function deletePet() {
         // Vars 
-        const deleteInputName = deleteInput.value
+        const deleteInputName = capitalizeFirstLetter(deleteInput.value)
         try {
             const index = info.findIndex(pet => pet.nombre === deleteInputName)
 
             if(index !== -1) {
                 const deletedPet = info.splice(index, 1)
 
-                resultCardDelete.innerHTML = `<p>La mascota${deleteInputName} ha sido borrada exitosamente.</p>`
+                resultCardDelete.innerHTML = `<p>La mascota ${deleteInputName} ha sido borrada exitosamente.</p>`
             } else {
                 resultCardDelete.innerHTML = '<p style="color: red;">Mascota no encontrada</p>'
             }

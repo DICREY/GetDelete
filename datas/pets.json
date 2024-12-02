@@ -7,7 +7,7 @@
         "edad": 3.5,
         "peso": 25.3000000000,
         "nombre_propietario": "Carlos",
-        "sexo": "F"
+        "sexo": "Femenino"
     },
     {
         "id": "MASC002",
@@ -17,7 +17,7 @@
         "edad": 2.0,
         "peso": 12.5000000000,
         "nombre_propietario": "Laura",
-        "sexo": "M"
+        "sexo": "Masculino"
     },
     {
         "id": "MASC003",
@@ -27,7 +27,7 @@
         "edad": 4.2,
         "peso": 6.2000000000,
         "nombre_propietario": "Andrés",
-        "sexo": "M"
+        "sexo": "Masculino"
     },
     {
         "id": "MASC004",
@@ -37,7 +37,7 @@
         "edad": 5.1,
         "peso": 30.0000000000,
         "nombre_propietario": "María",
-        "sexo": "F"
+        "sexo": "Femenino"
     },
     {
         "id": "MASC005",
@@ -47,7 +47,7 @@
         "edad": 2.8,
         "peso": 1.2000000000,
         "nombre_propietario": "Luis",
-        "sexo": "M"
+        "sexo": "Masculino"
     },
     {
         "id": "MASC006",
@@ -57,7 +57,7 @@
         "edad": 3.7,
         "peso": 8.5000000000,
         "nombre_propietario": "Sofía",
-        "sexo": "F"
+        "sexo": "Femenino"
     },
     {
         "id": "MASC007",
@@ -67,7 +67,7 @@
         "edad": 6.0,
         "peso": 35.4000000000,
         "nombre_propietario": "Juan",
-        "sexo": "M"
+        "sexo": "Masculino"
     },
     {
         "id": "MASC008",
@@ -77,7 +77,7 @@
         "edad": 1.9,
         "peso": 4.3000000000,
         "nombre_propietario": "Ana",
-        "sexo": "F"
+        "sexo": "Femenino"
     },
     {
         "id": "MASC009",
@@ -87,7 +87,7 @@
         "edad": 2.3,
         "peso": 2.1000000000,
         "nombre_propietario": "Pedro",
-        "sexo": "F"
+        "sexo": "Femenino"
     },
     {
         "id": "MASC010",
@@ -97,6 +97,6 @@
         "edad": 4.0,
         "peso": 14.8000000000,
         "nombre_propietario": "Marta",
-        "sexo": "M"
+        "sexo": "Masculino"
     }
 ]
