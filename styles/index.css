@@ -11,7 +11,7 @@ body {
     place-items: center;
     height: 100vh;
     width: 100vw;
-    background: url("../imgs/pattern_bg.jpg");
+    background: url(../imgs/pattern_bg.jpg);
     background-size: cover;
 }
 form{
@@ -59,4 +59,44 @@ input{
 }
 .inactive{
     display: none;
+}
+main{
+    overflow: auto;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+#box-form-search{
+    width: auto;
+    height: auto;
+}
+#div-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+#box-form-delete{
+    width: auto;
+    height: auto;
+}
+h3{
+    color: var(--font);
+    width: 300px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid ;
+}
+img{
+    margin: auto;
+    object-fit: cover;
+    box-shadow: 0 0 10px;
+    border-radius: 5px;
+    height: 160px;
+    width: 180px;
+    margin-bottom: 20px;
 }
