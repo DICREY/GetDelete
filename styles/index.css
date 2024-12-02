@@ -1,0 +1,15 @@
+@import url("./dynamicStyles/var.css");
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: var(--black);
+}
