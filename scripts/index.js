@@ -45,18 +45,18 @@ document.addEventListener("DOMContentLoaded",() => {
         const inputName = searchInput.value
         let pets = info
 
-        const pet = pets.find(pet => pet.name === inputName)
+        const pet = pets.find(pet => pet.nombre === inputName)
     
         if(pet) {
             resultCard.innerHTML = `
-            <h3>Product find</h3>
+            <h3>Mascota Encontrada</h3>
             <p><strong>Nombre:</strong> ${pet.nombre}</p>
             <p><strong>Especie:</strong> ${pet.especie}</p>
             <p><strong>Raza:</strong> $${pet.raza}</p>
             <p><strong>Edad:</strong> ${pet.edad}</p>
             <p><strong>Peso:</strong> ${pet.peso}</p>
             <p><strong>Nombre Propietario:</strong> ${pet.nombre_propietario}</p>
-            <p><strong>Sexo:</strong>${pet.sexo}</p>
+            <p><strong>Sexo:</strong> ${pet.sexo}</p>
         `
         } else resultCard.innerHTML = '<p style="color: red;">Mascota no encontrada</p>'
     }
@@ -65,14 +65,14 @@ document.addEventListener("DOMContentLoaded",() => {
         // Vars 
         const deleteInputName = deleteInput.value
         try {
-            const index = info.findIndex(pet => pet.name === deleteInputName)
+            const index = info.findIndex(pet => pet.nombre === deleteInputName)
 
             if(index !== -1) {
                 const deletedPet = info.splice(index, 1)
 
-                resultCardDelete.innerHTML = `<p style="color: white;">${deleteInputName} ha sido borrado exitosamente.</p>`
+                resultCardDelete.innerHTML = `<p style="color: white;">La mascota${deleteInputName} ha sido borrada exitosamente.</p>`
             } else {
-                resultCardDelete.innerHTML = '<p style="color: red;">Producto no encontrado</p>'
+                resultCardDelete.innerHTML = '<p style="color: red;">Mascota no encontrada</p>'
             }
         } catch(err) {
             resultCardDelete.innerHTML = `<p style='color: red;'>${err}</p>`
