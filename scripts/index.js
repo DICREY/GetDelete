@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Vars 
     let info = []
+    let imgs = []
 
     // Events
     btnSearch.addEventListener("click",showSearchForm)
@@ -41,15 +42,23 @@ document.addEventListener("DOMContentLoaded",() => {
         .then(data => data.forEach(i => info.push(i)))
     }
 
+    function searchImg() {
+        fetch("https://api.thecatapi.com/v1/images/search?limit=10")
+        .then(res => res.json())
+        .then(data => data.forEach(i => imgs.push(i.url)))
+    }
+
     function searchPet() {
         const inputName = searchInput.value
         let pets = info
+        let ramIndex = Math.floor(Math.random() * imgs.length)
 
         const pet = pets.find(pet => pet.nombre === inputName)
     
         if(pet) {
             resultCard.innerHTML = `
             <h3>Mascota Encontrada</h3>
+            <img src="${imgs[ramIndex]}" alt="imgDog" title="imgDog">
             <p><strong>Nombre:</strong> ${pet.nombre}</p>
             <p><strong>Especie:</strong> ${pet.especie}</p>
             <p><strong>Raza:</strong> $${pet.raza}</p>
@@ -70,7 +79,7 @@ document.addEventListener("DOMContentLoaded",() => {
             if(index !== -1) {
                 const deletedPet = info.splice(index, 1)
 
-                resultCardDelete.innerHTML = `<p style="color: white;">La mascota${deleteInputName} ha sido borrada exitosamente.</p>`
+                resultCardDelete.innerHTML = `<p>La mascota${deleteInputName} ha sido borrada exitosamente.</p>`
             } else {
                 resultCardDelete.innerHTML = '<p style="color: red;">Mascota no encontrada</p>'
             }
@@ -81,5 +90,6 @@ document.addEventListener("DOMContentLoaded",() => {
 
     // Call functions
     searchPets()
+    searchImg()
     
 })
