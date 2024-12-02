@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded",() => {
             <p><strong>Nombre Propietario:</strong> ${pet.nombre_propietario}</p>
             <p><strong>Sexo:</strong>${pet.sexo}</p>
         `
-        } else resultCard.innerHTML = '<p style="color: red;">Product not found</p>'
+        } else resultCard.innerHTML = '<p style="color: red;">Mascota no encontrada</p>'
     }
     
     function deletePet() {
